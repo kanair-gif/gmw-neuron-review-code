@@ -1,0 +1,14 @@
+name: gmw-neuron-review-code
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - networkx
+  - pip
+  - pip:
+      - gdown
