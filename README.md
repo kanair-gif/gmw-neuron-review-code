@@ -77,16 +77,14 @@ provenance rather than as a single fully self-contained figure rebuild package.
 
 ## Access statement
 
-This repository is intended to be public on GitHub. Reviewers should be able to
-open or clone it without providing a personal login, password, or contact
-information:
+This repository is public on GitHub. Reviewers can open or clone it without
+providing a personal login, password, or contact information:
 
 ```bash
 git clone https://github.com/kanair-gif/gmw-neuron-review-code.git
 ```
 
-If the repository is downloaded as a ZIP from GitHub, no GitHub account is
-required for public repositories.
+The code and provenance files are also browsable directly in GitHub.
 
 ## Limits
 
