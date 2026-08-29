@@ -1,10 +1,32 @@
 {
   "created_at": "2026-08-30T04:44:05+09:00",
-  "purpose": "Sanitized provenance summary for the Neuron V23 Editorial Manager flat LaTeX package.",
-  "flat_source_zip_name": "GMW_Neuron_V23_EM_flat_latex_source.zip",
-  "flat_source_zip_sha256": "25246af52f13c9e05115c2f432210c3025329c0d60b43faa278f3616de575f72",
-  "flat_source_zip_size_bytes": 2316001,
+  "release_dir": "/Users/ryota/Library/CloudStorage/Dropbox/Project_Codex/Global_Mediation_Workspace/manuscript/submission/neuron_v22_candidate/working_copy/release_zip/GMW_Neuron_V22_release_dir",
+  "review_dir": "/Users/ryota/Library/CloudStorage/Dropbox/Project_Codex/Global_Mediation_Workspace/manuscript/submission/neuron_v22_candidate/working_copy/top_level/GMW_Neuron_V23_review_20260830",
+  "upload_dir": "/Users/ryota/Library/CloudStorage/Dropbox/Project_Codex/Global_Mediation_Workspace/manuscript/submission/neuron_v22_candidate/working_copy/top_level/GMW_Neuron_V23_EM_upload_20260830",
+  "flat_source_dir": "/Users/ryota/Library/CloudStorage/Dropbox/Project_Codex/Global_Mediation_Workspace/manuscript/submission/neuron_v22_candidate/working_copy/top_level/GMW_Neuron_V23_EM_upload_20260830/GMW_Neuron_V23_EM_flat_latex_source",
+  "flat_source_zip": "/Users/ryota/Library/CloudStorage/Dropbox/Project_Codex/Global_Mediation_Workspace/manuscript/submission/neuron_v22_candidate/working_copy/top_level/GMW_Neuron_V23_EM_upload_20260830/GMW_Neuron_V23_EM_flat_latex_source.zip",
+  "flat_source_zip_sha256": "2880483687754eb77c37894142552deb564d7372a9fa70b76d9ae2f65cb1f8c0",
+  "flat_source_zip_size_bytes": 2316254,
   "flat_source_file_count": 27,
   "referenced_graphics_count": 20,
-  "note": "Original local absolute paths were removed from this public reviewer-code copy. The flat LaTeX package itself is not redistributed here; this repository copy records code/provenance relevant to reviewer access."
+  "copied_upload_items": [
+    "GMW_Neuron_V23_EM_flat_latex_source.zip",
+    "GMW_Neuron_V23_Combined_Submission.pdf",
+    "GMW_Neuron_V23_Main.pdf",
+    "GMW_Neuron_V23_Supplement.pdf",
+    "cover_letter.docx",
+    "cover_letter.pdf",
+    "highlights_and_in_brief.docx",
+    "highlights_and_in_brief.pdf",
+    "graphical_abstract.png",
+    "graphical_abstract.pdf",
+    "submission_checklist.docx",
+    "submission_checklist.pdf"
+  ],
+  "missing_required_before_submission": [],
+  "omitted_review_only_candidates": [
+    "GMW_Neuron_V23_review_20260830/review_candidates/figS9_awake_k3_gmw_distribution_candidate_20260830.pdf"
+  ],
+  "updated_at": "2026-08-30T06:51:03+09:00",
+  "notes": "Updated after public GitHub reviewer-code repository was expanded file-by-file and manuscript data/code availability wording was changed from no-public-code to public code repository."
 }
