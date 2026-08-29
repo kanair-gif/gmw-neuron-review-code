@@ -1,8 +1,9 @@
 # KTMD corrected-montage macaque analysis
 
-This directory documents the corrected-montage macaque ECoG analysis code bundle used for the manuscript-facing KTMD/NeuroTycho analyses. The full code bundle is included in `gmw-neuron-review-code-20260830.zip`.
+This directory contains the corrected-montage macaque ECoG analysis code bundle
+used for the manuscript-facing KTMD/NeuroTycho analyses.
 
-Main bundle inside the ZIP:
+Main bundle:
 
 ```text
 KTMD_ANALYSIS_CODE_COMPLETE_20260819/
@@ -20,10 +21,12 @@ Important entry points:
 | `pipeline/strict_postrun_verifier.py` | Post-run completion and provenance checks. |
 | `figure_generation/regenerate_recovery_consistent_figures.py` | Recovery-consistent figure regeneration. |
 
-The full pipeline requires external NeuroTycho raw archives or split archive parts. Expected raw archive metadata are inside the ZIP at:
+The full pipeline requires external NeuroTycho raw archives or split archive
+parts. Expected raw archive metadata are in:
 
 ```text
 KTMD_ANALYSIS_CODE_COMPLETE_20260819/pipeline/expected_master_index.json
 ```
 
 No raw ECoG archive body is bundled in this public reviewer-code repository.
+

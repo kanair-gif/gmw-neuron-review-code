@@ -1,0 +1,22 @@
+[
+  {
+    "animal": "Kin2",
+    "n_pairs": 64,
+    "n_unique_contacts": 128,
+    "max_distance_px": 77.14537000208709,
+    "mean_distance_px": 37.14333864419024,
+    "median_distance_px": 36.12709375473007,
+    "bottleneck_threshold_px": 77.14537000208709,
+    "missing_contacts": []
+  },
+  {
+    "animal": "Su",
+    "n_pairs": 64,
+    "n_unique_contacts": 128,
+    "max_distance_px": 56.61763780924511,
+    "mean_distance_px": 43.36642799308295,
+    "median_distance_px": 43.57055646150813,
+    "bottleneck_threshold_px": 56.61763780924511,
+    "missing_contacts": []
+  }
+]

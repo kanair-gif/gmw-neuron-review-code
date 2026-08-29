@@ -1,0 +1,30 @@
+{
+  "package": "KTMD Kin2/Su corrected official-map montage full rerun",
+  "version": "v4-submission-provenance-locked-2026-08-16",
+  "target_days": [
+    "Kin2 20110513",
+    "Kin2 20110524",
+    "Kin2 20110525",
+    "Su 20110523",
+    "Su 20110526",
+    "Su 20110527"
+  ],
+  "primary_parameters": {
+    "target_sampling_hz": 200,
+    "prediction_lag_ms": 25,
+    "horizon_L": 4,
+    "internal_shift_q": 1,
+    "candidate_sizes": [
+      3,
+      4,
+      5
+    ]
+  },
+  "submission_safeguards": [
+    "part-level SHA-256",
+    "archive-level SHA-256",
+    "six distinct raw archive hashes",
+    "animal/date identity lock",
+    "no pipeline dry-run accepted as final data"
+  ]
+}

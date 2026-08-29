@@ -1,25 +1,29 @@
 # Global Mediation Workspace reviewer code
 
-This repository provides anonymous, no-login access to the custom code, algorithms, and computational models underlying the manuscript:
+This repository provides anonymous, no-login access to the custom code,
+algorithms, and computational models underlying the manuscript:
 
-**The Global Mediation Workspace: A control-theoretic formulation of global workspace theory**
+**The Global Mediation Workspace: A control-theoretic formulation of global
+workspace theory**
 
-The full prepared package is available in `gmw-neuron-review-code-20260830.zip` at the repository root. The most important instructions and provenance files are also shown directly in the repository so reviewers do not need an account or password to understand the contents.
+The repository is intentionally code-focused. It includes the synthetic network
+benchmark, the macaque ECoG corrected-montage analysis code bundle, manuscript
+figure-generation scripts, and provenance notes. Large third-party raw ECoG
+archives are not redistributed here.
 
 ## Contents
 
 | Path | Purpose |
 | --- | --- |
-| `gmw-neuron-review-code-20260830.zip` | Complete prepared reviewer-code package, including code, small outputs, provenance notes, and checksums. |
 | `src/synthetic_workspace/` | Standalone synthetic benchmark for the boundary-Hankel mediation score and confusable control networks. |
-| `src/ktmd_corrected_montage/` | Corrected-montage macaque ECoG analysis code notes and entry points. Full code bundle is also in the ZIP. |
-| `src/manuscript_figures/` | Manuscript figure script notes. Full script copy is also in the ZIP. |
+| `src/ktmd_corrected_montage/` | Corrected-montage macaque ECoG analysis code, provenance checks, and small configuration/result tables. |
+| `src/manuscript_figures/` | Scripts and TeX wrappers used to redraw manuscript and supplementary figures. |
 | `data/README.md` | Raw-data access and checksum guidance. |
-| `docs/` | Audit notes and provenance summaries. |
+| `docs/` | Audit notes, flat-TeX package provenance, raw archive verification notes, and manuscript-figure source maps. |
 
 ## Quick start
 
-Download and extract `gmw-neuron-review-code-20260830.zip`, then create a Python environment:
+Create a Python environment and install the lightweight dependencies:
 
 ```bash
 python -m venv .venv
@@ -27,14 +31,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the standalone synthetic benchmark from the extracted package:
+Run the standalone synthetic benchmark:
 
 ```bash
 cd src/synthetic_workspace
 python workspace_core_experiment.py --output-dir results_quick
 ```
 
-The full synthetic benchmark, including repeated beam searches and exact four-node enumeration, can be run with:
+The full synthetic benchmark, including repeated beam searches and exact
+four-node enumeration, can be run with:
 
 ```bash
 python workspace_core_experiment.py --output-dir results_full --full
@@ -42,7 +47,7 @@ python workspace_core_experiment.py --output-dir results_full --full
 
 ## Macaque ECoG analysis
 
-The macaque ECoG analysis code in the package is under:
+The macaque ECoG analysis code is in:
 
 ```text
 src/ktmd_corrected_montage/KTMD_ANALYSIS_CODE_COMPLETE_20260819/
@@ -58,25 +63,36 @@ python pipeline/run_full_corrected_pipeline.py \
   --work-root <scratch working directory>
 ```
 
-The full rerun requires source NeuroTycho raw archives or split archive parts listed in `pipeline/expected_master_index.json`. See `data/README.md` and `docs/KTMD_RAW_LOCALIZATION_VERIFICATION_2026-08-25.md` for the checksum-based provenance record used for the submitted manuscript.
+The full rerun requires the source NeuroTycho raw archives or split archive
+parts listed in `pipeline/expected_master_index.json`. See `data/README.md` and
+`docs/KTMD_RAW_LOCALIZATION_VERIFICATION_2026-08-25.md` for the checksum-based
+provenance record used for the submitted manuscript.
+
+## Manuscript figures
+
+`src/manuscript_figures/` contains plotting and TeX wrapper scripts used for the
+current Neuron submission figures. Some scripts expect the full manuscript
+working tree and derived result tables, so they are provided as auditable source
+provenance rather than as a single fully self-contained figure rebuild package.
 
 ## Access statement
 
-This repository is public on GitHub. Reviewers can open it, download the ZIP, or clone it without providing a personal login, password, or contact information:
+This repository is intended to be public on GitHub. Reviewers should be able to
+open or clone it without providing a personal login, password, or contact
+information:
 
 ```bash
 git clone https://github.com/kanair-gif/gmw-neuron-review-code.git
 ```
 
-Direct ZIP download:
-
-```text
-https://raw.githubusercontent.com/kanair-gif/gmw-neuron-review-code/main/gmw-neuron-review-code-20260830.zip
-```
+If the repository is downloaded as a ZIP from GitHub, no GitHub account is
+required for public repositories.
 
 ## Limits
 
 - Raw third-party NeuroTycho ECoG data are not included.
 - Large derived working directories are not included.
-- Some figure scripts require manuscript-local paths and are included for source auditability.
-- No credential, private login, or reviewer-identifying information is required to use this repository.
+- Some figure scripts require manuscript-local paths and are included for source
+  auditability.
+- No credential, private login, or reviewer-identifying information is
+  required to use this repository.

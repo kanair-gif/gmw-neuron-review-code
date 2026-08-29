@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-08-30T04:44:05+09:00",
+  "purpose": "Sanitized provenance summary for the Neuron V23 Editorial Manager flat LaTeX package.",
+  "flat_source_zip_name": "GMW_Neuron_V23_EM_flat_latex_source.zip",
+  "flat_source_zip_sha256": "25246af52f13c9e05115c2f432210c3025329c0d60b43faa278f3616de575f72",
+  "flat_source_zip_size_bytes": 2316001,
+  "flat_source_file_count": 27,
+  "referenced_graphics_count": 20,
+  "note": "Original local absolute paths were removed from this public reviewer-code copy. The flat LaTeX package itself is not redistributed here; this repository copy records code/provenance relevant to reviewer access."
+}

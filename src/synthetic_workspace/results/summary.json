@@ -1,0 +1,252 @@
+{
+  "network": {
+    "nodes": 64,
+    "specialist_modules": 4,
+    "module_size": 12,
+    "workspace_nodes": [
+      48,
+      49,
+      50,
+      51
+    ],
+    "spectral_radius": 0.9199999999999968,
+    "horizon": 10
+  },
+  "headline": {
+    "workspace_external_score": 3.0736202512853854,
+    "split_decoy_external_score": 4.107241513637971,
+    "workspace_mediation_score": 3.389151738938709,
+    "split_decoy_mediation_score": 0.28812248443923394,
+    "degree_hub_mediation_score": 0.6940985115002177,
+    "workspace_null_percentile": 100.0
+  },
+  "robustness": [
+    {
+      "Background strength": 0.75,
+      "sampled_random_recovery_rate": 1.0,
+      "planted_motif_recovery_rate": 1.0,
+      "mean_random_percentile": 100.0
+    },
+    {
+      "Background strength": 1.0,
+      "sampled_random_recovery_rate": 1.0,
+      "planted_motif_recovery_rate": 1.0,
+      "mean_random_percentile": 100.0
+    },
+    {
+      "Background strength": 1.5,
+      "sampled_random_recovery_rate": 1.0,
+      "planted_motif_recovery_rate": 1.0,
+      "mean_random_percentile": 100.0
+    },
+    {
+      "Background strength": 2.0,
+      "sampled_random_recovery_rate": 0.95,
+      "planted_motif_recovery_rate": 1.0,
+      "mean_random_percentile": 99.98333333333333
+    }
+  ],
+  "beam_exact_recovery_rate": 0.9166666666666666,
+  "beam_mean_jaccard": 0.9666666666666667,
+  "exact_search": {
+    "total_clusters": 635376,
+    "target_cluster": [
+      48,
+      49,
+      50,
+      51
+    ],
+    "target_score": 3.3891517389387085,
+    "clusters_above_target": 0,
+    "target_rank": 1,
+    "best_cluster": [
+      48,
+      49,
+      50,
+      51
+    ],
+    "best_score": 3.3891517389387085,
+    "top20": [
+      {
+        "cluster": [
+          48,
+          49,
+          50,
+          51
+        ],
+        "score": 3.3891517389387085
+      },
+      {
+        "cluster": [
+          48,
+          49,
+          50,
+          63
+        ],
+        "score": 3.2394695855044877
+      },
+      {
+        "cluster": [
+          48,
+          49,
+          50,
+          62
+        ],
+        "score": 3.222251739099975
+      },
+      {
+        "cluster": [
+          48,
+          49,
+          50,
+          60
+        ],
+        "score": 3.215764870102267
+      },
+      {
+        "cluster": [
+          48,
+          49,
+          50,
+          61
+        ],
+        "score": 3.2078117999680456
+      },
+      {
+        "cluster": [
+          24,
+          48,
+          49,
+          50
+        ],
+        "score": 3.149118113963716
+      },
+      {
+        "cluster": [
+          49,
+          50,
+          51,
+          63
+        ],
+        "score": 3.078681074195049
+      },
+      {
+        "cluster": [
+          49,
+          50,
+          51,
+          62
+        ],
+        "score": 3.062220241271904
+      },
+      {
+        "cluster": [
+          49,
+          50,
+          51,
+          60
+        ],
+        "score": 3.055102146580547
+      },
+      {
+        "cluster": [
+          49,
+          50,
+          51,
+          61
+        ],
+        "score": 3.0479674778114765
+      },
+      {
+        "cluster": [
+          24,
+          49,
+          50,
+          51
+        ],
+        "score": 2.978486535200435
+      },
+      {
+        "cluster": [
+          48,
+          50,
+          51,
+          63
+        ],
+        "score": 2.961926927508765
+      },
+      {
+        "cluster": [
+          23,
+          48,
+          49,
+          50
+        ],
+        "score": 2.959354269079154
+      },
+      {
+        "cluster": [
+          48,
+          50,
+          51,
+          62
+        ],
+        "score": 2.947950515923336
+      },
+      {
+        "cluster": [
+          48,
+          50,
+          51,
+          60
+        ],
+        "score": 2.940094053537064
+      },
+      {
+        "cluster": [
+          48,
+          49,
+          51,
+          63
+        ],
+        "score": 2.9380299505131817
+      },
+      {
+        "cluster": [
+          48,
+          50,
+          51,
+          61
+        ],
+        "score": 2.933441085637835
+      },
+      {
+        "cluster": [
+          48,
+          49,
+          51,
+          62
+        ],
+        "score": 2.9248448594750305
+      },
+      {
+        "cluster": [
+          48,
+          49,
+          51,
+          60
+        ],
+        "score": 2.9151494311456787
+      },
+      {
+        "cluster": [
+          48,
+          49,
+          51,
+          61
+        ],
+        "score": 2.90775180745923
+      }
+    ]
+  }
+}

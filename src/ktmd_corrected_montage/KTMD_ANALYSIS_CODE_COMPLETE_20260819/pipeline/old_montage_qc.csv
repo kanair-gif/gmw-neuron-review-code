@@ -1,0 +1,12 @@
+day,date,animal,n_pairs,n_unique_contacts,max_contact_use,incidence_rank,omitted_contacts,montage_source,known_region_fraction
+20110112_george,20110112,George,63,126,1,63,58;92,C2/George/Chibi homologous local-neighbour topology,1.0
+20110113_george,20110113,George,63,126,1,63,58;92,C2/George/Chibi homologous local-neighbour topology,1.0
+20110114_george,20110114,George,63,126,1,63,58;92,C2/George/Chibi homologous local-neighbour topology,1.0
+20110513_kin2,20110513,Kin2,64,128,1,64,,published-map adjacent odd-even local pairs,0.0
+20110523_su,20110523,Su,64,128,1,64,,published-map adjacent odd-even local pairs,0.0
+20110524_kin2,20110524,Kin2,64,128,1,64,,published-map adjacent odd-even local pairs,0.0
+20110525_kin2,20110525,Kin2,64,128,1,64,,published-map adjacent odd-even local pairs,0.0
+20110526_su,20110526,Su,64,128,1,64,,published-map adjacent odd-even local pairs,0.0
+20110527_su,20110527,Su,64,128,1,64,,published-map adjacent odd-even local pairs,0.0
+20110621_chibi,20110621,Chibi,63,126,1,63,58;92,C2/George/Chibi homologous local-neighbour topology,1.0
+20110622_chibi,20110622,Chibi,63,126,1,63,58;92,C2/George/Chibi homologous local-neighbour topology,1.0

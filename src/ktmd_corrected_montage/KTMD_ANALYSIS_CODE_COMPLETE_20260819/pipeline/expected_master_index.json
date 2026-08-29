@@ -1,0 +1,1358 @@
+{
+  "format_version": 1,
+  "splitter_version": "oneclick-v4-2026-08-14",
+  "input_directory": "/content/drive/MyDrive/Global Workspace Analysis/NeuroTycho_Monkey_ECoG_Downloads",
+  "output_directory": "/content/drive/MyDrive/Global Workspace Analysis/NeuroTycho_Monkey_ECoG_Split80MiB",
+  "selection_keyword": "KTMD",
+  "selected_archive_count": 11,
+  "completed_archive_count": 11,
+  "all_complete": true,
+  "total_original_size_bytes": 16234100968,
+  "total_part_count": 200,
+  "incomplete_archives": [],
+  "archives": [
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786647512.8315365,
+      "original_name": "20110112KTMD_Anesthesia+and+Sleep_George_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110112KTMD_Anesthesia+and+Sleep_George_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1353300833,
+      "original_sha256": "94bf3b0e43ee2a9bed2611f8d1423fea3e8d3c5fb6314148ff009aae6c9b509c",
+      "chunk_size_bytes": 83886080,
+      "part_count": 17,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "b538379e4964e8d56df37803cd45a390c1bda66cfae7728ed0c00ba3529eda3c"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "a261b0926e01ad5435eaacd9043c851f64cd35167076eb68f6adc038058a2fc2"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "ca35b52c730c08e5f12326bcbded6056d32a5783d4b2abac7569ddc77c203e32"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "d891ae761c4b3fef0168b7b967d57d4227fadffce581fe631941059d76d7fe98"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "c9cf435bf6c875c4549ae1da976f0c19a132f948735e2a6b17251881fc1dc75e"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "6dd51349f670fc5b4d042317b9df661f6def80e0dc85ea693187e12edcfc5586"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "f0c275a72e630c25cff447bc02fb99d7256efabfe6f6f5858cdbb4d527ae2e4c"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "74d5c488b81ab2564f338b9dd6b3f8923e97da4c9554d935c8f23c02ef07a0b9"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "dfba0b002bc67869ed25f6455790b8006861865af1ebb7ebc3ed4c991f9e84a9"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "e4c6e89284c2a61dd0957f64d9453d5867a505b8785afc13f272d679e5c77179"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "fa199198dfe3c28777a4d01847e80da025580a8aab918e126688de5627bc7809"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "5b5757c8cae060259d371b4de2b2eb9d450bae67ad54d315840e6168d8ea8b5e"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "637ec0e31c4b7c09add901ae35f4951da2d83ffa288767724511f18e9eba07ec"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "2c6c7f86aeab7bacf368731ee863f25e78b65055eb82a0ea83f5d987897a2930"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "420dba0fed457cb62e837ffeeb1522c4d063be73b2358f045d5f789572699a9f"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "3bc3c3e2ad2bb54eaa8baac58ec90ff475ac73e1c0dcf3e470c65c32fdd0916b"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00017.bin",
+          "size_bytes": 11123553,
+          "sha256": "055794d66b8fe3a29c7edac8531619508d87422f7628279ff56a94f4f91f55b9"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786647588.6171696,
+      "original_name": "20110113KTMD_Anesthesia+and+Sleep_George_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110113KTMD_Anesthesia+and+Sleep_George_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1375834939,
+      "original_sha256": "ee244c3800ea287537058c278be9b28b4b9fc55193b0225b0cbb8175ef964aa5",
+      "chunk_size_bytes": 83886080,
+      "part_count": 17,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "14da5a881411ba8ed8af4133a2cc6cf9f3e47b2a6eb3c762b81ba5014e09acc5"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "afd62989faf2c78ca898006327f4ecf5889da724432af15d2c8db5641be14a0c"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "2c4abe6a526f5b43e8e829ac66b6062ea30fe2a9a5c47a891a3fa38ca24b9751"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "64f4b8b2d7fad9e754aef5d966cf57fbcab07d6a404967a9206b0cd2d698c0d1"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "d36f1e1daa30eeeca1d87125a80363bee2336e042fa5d0ae1d59be1e9ac2901c"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "7359789f601fbaafbadf1e8ec76dd982fe433eeaa651c47bb950999098cf0799"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "fcd2d9efca6903ff14092a03c64073db5c054666c969272f339b91a39ab49bae"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "28c26ff2e7cdd9fd294f9b193f7065dd24429821f51b8955ff142e38340a5668"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "0b0a63f5c68b4c75e996db456fc838334682af10f1d3337356569faab0613f5f"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "530c90151a40b3e943a64e7f52bc4d9a639aac7ed4b6ce159d668c00927de37c"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "62fed65b290b62ce0e1b2518965874f19beb096fa4f6598f7fd91720e36bad23"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "d6b9562ebcc3127fa447e1c4aef671a83b7501eadc467705dc2e12820900538a"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "5132419bf8c5cefb4244419ecf1abbd2da791c757dd284272fffb28961fc6d1d"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "6a4ada7cd375b1fc57aea7b20897b139c3df9776d1cdb8041daa3c33908ce495"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "480708461ee25440746ea3a5a613b0591717a65adc9f90e92e2de266be220740"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "bbec006bfb92a7f0f22d850258971496a31d0db7cc3aeaa13962f70cc55ea444"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00017.bin",
+          "size_bytes": 33657659,
+          "sha256": "adcaa2e7675292a6e1d74af56e06eb74bb5c98b6202d4365fc0bc05191c1e1fd"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786647651.1886616,
+      "original_name": "20110114KTMD_Anesthesia+and+Sleep_George_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110114KTMD_Anesthesia+and+Sleep_George_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1331540417,
+      "original_sha256": "73a7f3857211bc5ee52509ae0ae4b000193f404a3e6c1c1a96de95cad8ee0874",
+      "chunk_size_bytes": 83886080,
+      "part_count": 16,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "1fbf0a15d3ff013ea8ff97b6e087d98c82af8ca9326fb4e1adae2f2e104cd136"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "bbf62c25a8c398c4f8a69e3421940034df3d3d833d63e3d341ae1a26235b391b"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "7250852789aed532dca3ab42ba4b03ce43288d4278e97ead9ef1cbe1862e051c"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "5ca48583b8590680975f9e06ecaf34012a4a49f6068fdc44e94b1bc7c436290f"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "4a6c384222de31b0e1fe8b219e827985b4c0c7546982f7553e381c217f969ec5"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "e5d8c00cc393f402e3e7584c97b430bccd59dfe5aacfaf09ec88c526151622e0"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "40238eb05682e3275c0f2a312e31f8bc8a42612d9c45f6eb4c516f98c3bdfc4d"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "51fca6de3b3d158581085d3ae96081b80d0a8f4311e07c7d142b39e27dc4ea12"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "bff69612164cecb066f7501846404638ae0268868adb9ef957e91127752f5bb1"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "747501da95345045ebd34442a21ceb3cfef0d2b560c5245e665647e687659334"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "c8c11b9ff8afbdfcffed12d0cd1b037fa2e16ac3857bd507a009624e2d3cb7a9"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "98b552fe00690f9b5ade9767365500e8f0b0cfcb20929f8f54b9fcc6bff3c63d"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "31b81a422df0516fcc91cbd579f22b5ecec6263a0f4985d15904ddd63cc1f410"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "15de64d8cb29249fd29c6a0e7f19c90b6940a0853f6d17c2afb63dc221d15011"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00016.bin",
+          "size_bytes": 83886080,
+          "sha256": "5e1ff86a2681b263cfc10cfd5891a5e6143ee05daa91773d3eceaf5ab86b8ac1"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00016.bin",
+          "size_bytes": 73249217,
+          "sha256": "0b1e798e27cb644fe964dffca55f19bf28341badf2eea8adf2c2740264d4f71d"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786647720.6709597,
+      "original_name": "20110513KTMD_Anesthesia+and+Sleep_Kin2_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110513KTMD_Anesthesia+and+Sleep_Kin2_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1424437299,
+      "original_sha256": "02d72d7964fe7892d2cfdc2144d242f946658d50a931344972ea398627e4294b",
+      "chunk_size_bytes": 83886080,
+      "part_count": 17,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "5e5565e9e1ff18ebe220b040ad59906cde73fa38120a5d157a4b65f989b5d873"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "b916ec899cbbdf3f676a3c26301ba05b8d91d6bfdb2350e778eff4da1b378e5d"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "b4d89cb2e35d7c30bd602186553108ca0364b40137d43a8b0b7fd59f4022e79d"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "5b9fe10fad814de6613d9471d1005d4c880c62758023ddb38119bbe16c3ce306"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "98d1772fd58d5c83a0298bf382687b5d66b95052710a4302d825963b28266f5b"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "8717d2060dc3cd2afe986db9a730e72edbf2e08438639fee140b07d5be63765b"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "b5146736e4a778f2eb4177f5084c1843ccf22ced7b585a9c92ecb3c216e11b84"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "ad5a6943d9c104941d0ca696bae37a95802c4ea01cf02a69382a1e876e5c3dec"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "52dd7f76fb6f975f07f2ae2689904739df953e710b99bf2b2eea3e598ea701c6"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "87f27c0358ab90b155ef765bb9bac78eeca357ef2f66e0dab5ccc2d148149279"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "b1cdfc58950c074798bedf9a4a46db9806841832e1a503d30e5d9f814375ec89"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "d65af171101f47c46d5fa41e724574f7e07f21b4892a06ac767cc1edd79d57e5"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "c57ca06535a52e6156403ecd1f6bc1d2bbf7032655d0deda9a22c992a1bc43c0"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "ede5d5466ef1b3c4e1eb6bd9702e33c22158499e885fa307c8d2121e8d3a2613"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "0957c972045b76be59bd195b0a7d28e7275386da53ca53f49ed2ac8e433daa54"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00017.bin",
+          "size_bytes": 83886080,
+          "sha256": "1d08ab8493151d0128e374809e2472ac1dffb926a167195463b39a6000e85294"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00017.bin",
+          "size_bytes": 82260019,
+          "sha256": "743a2eb313b9c1c32a28814c303359172ec6f8536b0ca835f3bdb7a8d2f3b83c"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786647804.8631687,
+      "original_name": "20110523KTMD_Anesthesia+and+Sleep_Su_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110523KTMD_Anesthesia+and+Sleep_Su_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1710588003,
+      "original_sha256": "5627bc81c3b05a014582f077a95cc4a9ee4438062e2ccdb7f3b8dab73bc83a2f",
+      "chunk_size_bytes": 83886080,
+      "part_count": 21,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "27885d7d95bcea99fe0c3fcbdbe235f4680d2d1e3d2fd139b5977ed0303a1b8d"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "962d3134a80cb66084ca9f0232a02e47718f7be22b4684a7d0d5afdd235796f8"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "03d0ecc6c7f01459f22355b9251260d500f75fd5b5c7b7cb3b9a761eba3dd899"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "9b1d9dcdc7ec895d3ccba93348035bed4dd13499484ea0f840fd718253f32fae"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "f1befd777821ece9956c67a52b8d755371579816b6db8d4d0379f311211c69e3"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "fba74410fb1d70e344fffc6d902c2847a35aab7e9a29f64fe87df5fc519d0459"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "80bf28db35ea7f2f6c5e750a5ca7c321dcd73d0fce7b247e9238736648abe68d"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "bad116dbf5a4d7904e20d4a7f41c314a1b875f05f2de0e818e141b06e7a07ddc"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "9c57db56a81eec6ccab2d1a784809d8e6beb2027ae4c3535037ba2102b4f64f9"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "8c5c62f6693bb09e562960a7d70fd1019506e81e1ac2e6a38b148f289f273c02"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "987efeca98fe2e6b789d2b3df942ee91506b6ebae684754a6bf95e297a501001"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "d0966e917cac4e2fd6a0c5ee89acb17905571864d817cf5192032b598ef37697"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "003206e6287589ed34425ffc95c3426c4b60ab1ebb891a421368bea617de9114"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "c565efc495e7dd7364e2c70707719dcb477cdf25098f6bd2be86b45cf0609d4d"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "93b1cb5a6ca032f52990f97d5d8603bfbabd3d0a7311dc9901f3922471318dce"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "9505c35f63d0bbdf700509ab852374e40ea1f97d38199e813dd16b2b85fb2c38"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "a73b3e83a38c885cd96b2a50bdcfcfa3a6fb95cd35db836f5519eeff04666c43"
+        },
+        {
+          "index": 17,
+          "name": "part-00017-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "cfc3a9fcca9d50877a84fda182e0b45d5160ac79abd5361a1451efd5e3e00272"
+        },
+        {
+          "index": 18,
+          "name": "part-00018-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "3d8fde9c69b6af6e2a0347e63af1f49dcde3e50e84d7f0ec51ae550839c6cab0"
+        },
+        {
+          "index": 19,
+          "name": "part-00019-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "b84601e332168c3028f4993d70a35c03d640b9cf9991198cb80d279287d6d749"
+        },
+        {
+          "index": 20,
+          "name": "part-00020-of-00021.bin",
+          "size_bytes": 32866403,
+          "sha256": "c108682f2a9cf36eb44babc84db752b441b30236cb04178e7cf1c736e498bc2d"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786647880.9430175,
+      "original_name": "20110524KTMD_Anesthesia+and+Sleep_Kin2_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110524KTMD_Anesthesia+and+Sleep_Kin2_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1428485472,
+      "original_sha256": "bf660e272e25843da01f3374de3374e3fdfd4e3a1a84aed3eab6ed1ba558e070",
+      "chunk_size_bytes": 83886080,
+      "part_count": 18,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "e9996956e38fd8bda492c7ad21452b386b61b89353598781723260fc42c33151"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "957fd964f4dd6afa55e82a4716473578c03740234b73a8c3e59fe89c77c54e3c"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "d8b571c2f85dabd4d15c49e80ccee05d469d6b752454683f4bca17d34ff2754a"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "0ea2118deae96c524505d39dbe6f29c9da6e7862ec523a0456335b7661fd048e"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "1e76f16c9886d2bcc3aae672c83d4e07b6bfe4f2423fd1822c9b75e101a49610"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "bda19a5e36f185e05f0f765ea1be91fee4ce6b9fd573abe436807817eecb49f5"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "7bf49a4e96e8180a9c293b8e7715dce88e97f8024484eb01b605392ec2022248"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "b19bb1331ff778fecd9c59955f65b3ccd362f5cdb3c8f0388dbf6237fc54aaa7"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "db8da560d3d1af07075f1973eeb05b9176444fdc84a5c4323e1930b84f331588"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "3d43a8dc6e468461921aae1e9799a249c45e137b4839cc601cb5165ee43fceec"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "d91d3980f86e7fe0cbc567259bab1757748af3267eeb3cf9c10abb9418d80426"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "44478700c86342b39a6fed0aab309e9cc0044aac93ae34c4c1a0ee697f5e2723"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "276d6f53bf30797882cea41a68a8ab0c494da067bb41684ad7ed5a2eb4cb6731"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "74426bbcc232111e7e31522784b571747f86b01ac7de395ca25c17f90f42a5a8"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "2c282edb0dffcebb5161162c0fe3bf28eba25b2183e1c3c3261bf80e417071a6"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "887de09ad6b1c645e971ebbf20210ae3fd06ac5d5953fedb6aece50c135989be"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00018.bin",
+          "size_bytes": 83886080,
+          "sha256": "26fc1072eb67e98c0270e573cb4eeab1f801bb2534dd47349d213fb1c8e52133"
+        },
+        {
+          "index": 17,
+          "name": "part-00017-of-00018.bin",
+          "size_bytes": 2422112,
+          "sha256": "7787617ff6fb90c4318d9abb3bad00f094852371a3d1e89eda72d28a5b21e1b8"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786647957.8083904,
+      "original_name": "20110525KTMD_Anesthesia+and+Sleep_Kin2_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110525KTMD_Anesthesia+and+Sleep_Kin2_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1702784580,
+      "original_sha256": "216a77f81e8b0b62bf01d832b3bf780d292085a06b8cc3d5b07421a4040dd295",
+      "chunk_size_bytes": 83886080,
+      "part_count": 21,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "e3af622b4db49386f77e88e0f05a6aaf7df3d057e5b8a26e4faeb73137fb7729"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "1532dc20784e6fe078cbd6a845ff58af12332b1f9c3ead1e906b7f890ed1700e"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "b5801ee039a470aade1cc84aef93ab62ee88aa1633445ba4301bc0d229f16acd"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "86b4ed291d6b458ce68d14de2709e46b60dceeed9d47fba340431d1e22b32b9a"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "389b27b84bef233f5fa662e04be04b28b8a11965a3c8e3f0f525440069a9b322"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "baae1173d28dca89a4d9b39038b929353657dba4da6344cc423d80208071b6e9"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "5618a8ef6401c3954cce666776bbadacdcf4a0e4c26abdbd39f2912af9df25aa"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "c283d18125c8cb514902546544786c16843ee57f1e5fe3cc68839e2a6d95b8ee"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "34ca5bc0f2649e1cf47ae3326369eb4aefbf3a5fd45a1600275f4f64330a8db7"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "a6504b71d615b08bc65388008323dbc7adf4c547b9a1087a19d67e77c0706420"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "0b9e4ea8b914ea3e1ceb5e9175b086216e50c66b587383ae5dd80ad5005f6c09"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "97ddab7af9d885c5a72a76234844918f9e4705cd6b2c8ccce91c33aa55e097f2"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "bf829d145be23bceaa342706afac52cf5f5131281b875f7f37ceeb031cf4f795"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "a013302087098012d5b3951bd11de53b55d7cfb5510bc9dabd381b15fc87d78f"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "72e0b1144bacd9c9190168bea22303e5363377f1728ead56fe54b5851e526fdf"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "72c7311b17fcbbff73d2f9a491a604dcf38672a04faa4c5948cc64df6a657ee3"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "de4b9078f9d9b5623d30f0ec8309386db109564d392b1329687ae46896143ece"
+        },
+        {
+          "index": 17,
+          "name": "part-00017-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "78cbb0bf7deb52b53aa06cfa707c02358215a589e98fcbc2cc8555b9df21c811"
+        },
+        {
+          "index": 18,
+          "name": "part-00018-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "d040e405c88fc7a27c7568ef321ef13548c68cb43e16340e6e49abba919d3401"
+        },
+        {
+          "index": 19,
+          "name": "part-00019-of-00021.bin",
+          "size_bytes": 83886080,
+          "sha256": "faf25a6c1d0fcd3d1baf4721502424e3bd51f16e0bc00f2dc7448ac384e0f326"
+        },
+        {
+          "index": 20,
+          "name": "part-00020-of-00021.bin",
+          "size_bytes": 25062980,
+          "sha256": "9362fdb281fa6ae5f77670e16ba9079e70aef143df9a58e267cf992e23415394"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786648035.3421872,
+      "original_name": "20110526KTMD_Anesthesia+and+Sleep_Su_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110526KTMD_Anesthesia+and+Sleep_Su_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1641869102,
+      "original_sha256": "5622f605e436d667b160124fdacd699e354bfe410e4172dfe7777e28cbaeb447",
+      "chunk_size_bytes": 83886080,
+      "part_count": 20,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "1acd6ebde4be223f777e5f6776c6cec996fab00ef5e82880388e15727f2ab257"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "da48660e3661d5d8afc19a8edd4e1651eb5d5811fbe821b5c49b9677909dddfd"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "c9ced0a68e85a5e5814447097cb1b785de35b2adba549f46b80132d4d3f8d9f8"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "17850975b321c250a22e564d769f13ce3348936765098aa3862519bfff1144f9"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "26ca67c8ad609360f0bc885cda761a01253e5cf1d201d588d49fe5bcee77284b"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "91c27a95e301a0e6b5485d4bce32e2104babe1d38bb27c4f4414d847a80c1ea7"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "f80d9ffaad8e01159f320dcdcf89a6763b7278f14bd7f74fcaaaeacb06defc6c"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "12e378e4b8b99b463cc8520ca25d2b532f020913c7391ba3575ec9a828b091c8"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "5d280f3985c4623fce367f293d5f4e63172ecf67d53628d21d760b91b4cd6ff7"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "45dd2a0a8100af0e4c61fa938044c66fc498fa856d832f11392af06693316958"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "63a22892d71f4ab0acb126340dab7aa581c2ca4e664d3df30432fcd1ca9f907c"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "6a46d2b5b3a12f28b936189d3fbe7574877d2881ca7f5b37dab7a25279f02ecd"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "64027f75680455cf77d28ba5505d0325ec2df6d6e840551ef6c139eb4a0240c8"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "da5c2731d03c2cf6973503f4e724d71f24225ae1ad754a5fcc271b69a5e3c15d"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "c1d2603b3fe85872e3dd3020f06aa94a554d2c7fe960a14a228fee8a837c4078"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "e17261aec7ba06138460502e6bf4696cbc3c9b740c23c958ccafaea39973d897"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "371557547294b2a1be612f06ae9e8adf87c5b964e6358531383f79343e24a646"
+        },
+        {
+          "index": 17,
+          "name": "part-00017-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "529d786e5ef9637ee4a16209327f4a4a93e3989f56b192e57723c8d70bdee7f3"
+        },
+        {
+          "index": 18,
+          "name": "part-00018-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "d32e1ad04a81dcf31685793b42758a59ff1e21b01c026c1944a55319ab591c67"
+        },
+        {
+          "index": 19,
+          "name": "part-00019-of-00020.bin",
+          "size_bytes": 48033582,
+          "sha256": "464a9f19bae88f072b9ff014222ab55311b8ec8a5ae76d22d44505cd144ea4c9"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786648121.4675636,
+      "original_name": "20110527KTMD_Anesthesia+and+Sleep_Su_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110527KTMD_Anesthesia+and+Sleep_Su_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1631726016,
+      "original_sha256": "683fb88ae99ecc7df3b20c91a531907410150a304ffba3d55920209b1613a2b8",
+      "chunk_size_bytes": 83886080,
+      "part_count": 20,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "5d387f1603ecdb939edf910fb536bab50daab4916eb486d776902299e1b8c09d"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "3e0fd38f3f018aca3bc88a68db6442ce9c5f93029b2a2351d466f2ab04924c42"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "24612edac9e9738e9b2b66fe78cd59993c914e85acd1875529423bc4ffc86b63"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "93199bbe60134bcf58b42d6811709c65a6eb41c4ad8275a4d9ffe6358ef844eb"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "c55a7827f473aaff12e617dd29132fff8aa23e1629fefa7407743db1cf80cba7"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "794b272d7a82985478c73d115cf195dd161268db04e0d5189c596c57e8e92a5c"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "4cb9c2678b9238ec835671f8b6fea882c303a1726c48f856fb2e087e230ef207"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "4a9d2db46c3e44f54888a3b76225276feadb00d4b4daac30ded88eaee289d5bc"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "15b4483fd226970befa17c87e3d53d5c224f2566fd0073d56756ac321bf6334d"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "e6cb52cc0827b770d1caa4c50d9ab1d4a64d930f1e485579e00a36ee8603d723"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "4c358f4ffa3c29b67df2908e8466a73f2a0e45f122dc3e3729a98d3311eeebe4"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "12c37c69b945c7977236d873d1bd6e8b090f17b8d2c0a918932378b414a21a5c"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "994823a4e2901dcedc2a3883798c5cc18b06547067bb074999d594f8c4ba66fe"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "b0cb487dfd5c8da583a1fff585eacb9088fa5f7e13fa175f5bc929aa9d23a7d0"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "834cd488634e71a46977a077251f0988c4270084a6dfbd9823196eada0babc2e"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "166ffb870f62da64421f5bde334b4202e7f3c0124464f0d1b0eb8f559b4f05ec"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "4840125a678a4400fbbaf05a6fd8581917f36e37dc0a35897669d26a1b3003be"
+        },
+        {
+          "index": 17,
+          "name": "part-00017-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "c1a17e2205096e537a186f60d45d82a615e472f145c87326710367fbeddcd6ce"
+        },
+        {
+          "index": 18,
+          "name": "part-00018-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "eb75c4216d93917ff725383e68bdee1e889a56e363dd03100a1bdb3d2ff45c0f"
+        },
+        {
+          "index": 19,
+          "name": "part-00019-of-00020.bin",
+          "size_bytes": 37890496,
+          "sha256": "51ddc60a42b4a8efc8445e5ba109b5eadb9a198143f9be271727ea77924edcc8"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786648181.6714725,
+      "original_name": "20110621KTMD_Anesthesia+and+Sleep_Chibi_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110621KTMD_Anesthesia+and+Sleep_Chibi_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1010481445,
+      "original_sha256": "a464296c8da64330b8c2b4e1ca049cf12eea97d58f6ab1cdfcd9e1176b27f82f",
+      "chunk_size_bytes": 83886080,
+      "part_count": 13,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "256585ef0790dc5cd7c8445f0c295ab8ee69f2eac63a2f6f678c3cbc054bfea1"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "11cb8ead9035fa24eb7461f6988db2fddee9a471d0de47a04ecd67f1e89f9a47"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "5fa7c51b55fecaceda278c201bbe291550dce004a1b70ef6f14ab40a877f00c7"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "41840e62de32f8513d93396d8868a45a39d02f1ef69feadb8b74830733edc080"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "09cc6f7a79137402896d8208a151e44a55ca0ce8825166c227045782e5049c0d"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "3fc6a76200f45282d80a7e352f810d3c025c6934667f3d7b93561a0de8d1c96a"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "c932be8e18e89cdf6be3f028788e18dee8ddcbc77e095f30723b690074d34f1a"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "c4ce56fc34b318848b5056ff500b5a5393bd7f824cb806a85600de337fdd8d9d"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "b0ed3fbfff74cc03a197dcd8eec5afeb1faf7986aaadf3fbc279e66060138c9b"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "ab2f1a8bbf3b493e7a4c046f84d4dd5c083024ab5212c2b23950f165c992518e"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "37a16ef4daf4ea2665b4afa9f4d83399ff706daed801eb5149cabae9ba386a69"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00013.bin",
+          "size_bytes": 83886080,
+          "sha256": "258ebf92b19a71af60e2b26b804b3c0fc546aac1cb4e12dc26a867ec5c5eca72"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00013.bin",
+          "size_bytes": 3848485,
+          "sha256": "02e0b6afa31da80b83f31f3311b200becc5fe499306c056a1cf151972d6c0d70"
+        }
+      ]
+    },
+    {
+      "format_version": 1,
+      "splitter_version": "oneclick-v4-2026-08-14",
+      "created_unix_time": 1786648252.826,
+      "original_name": "20110622KTMD_Anesthesia+and+Sleep_Chibi_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_relative_path": "20110622KTMD_Anesthesia+and+Sleep_Chibi_Toru+Yanagawa_mat_ECoG128.zip",
+      "original_size_bytes": 1623052862,
+      "original_sha256": "f980ba44d11a500289746f5fe56ec8e351337c91bf6a844fd2a4ad09592e5235",
+      "chunk_size_bytes": 83886080,
+      "part_count": 20,
+      "parts": [
+        {
+          "index": 0,
+          "name": "part-00000-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "746ccbccd8fbb9fa6099630c73b94442ee94f0932584077517f6ca554e23b367"
+        },
+        {
+          "index": 1,
+          "name": "part-00001-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "b18244d3d6bc63cbb9e106592409b7c6c78e5e441b1d3bee82e920aa6887a8cf"
+        },
+        {
+          "index": 2,
+          "name": "part-00002-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "ae289e916e1fe31b226a4e12fe95307dbeff947a417ccbd1f884bd25d2704b5a"
+        },
+        {
+          "index": 3,
+          "name": "part-00003-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "edf3a34fe56aebe88f29788093352352a075cbed9ec8c6dba8c3a29c1aa3a1bc"
+        },
+        {
+          "index": 4,
+          "name": "part-00004-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "23c45feab0035bd43b97858571857d848f6c80f1198feb23ec261d242fb21ec5"
+        },
+        {
+          "index": 5,
+          "name": "part-00005-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "cbac015dd845a8c1d70958ab3b5fc9baafcf03fb9f2df8e5a8ccc21d3bdc840a"
+        },
+        {
+          "index": 6,
+          "name": "part-00006-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "26096f5a33bc5c92312890240273fb812e46454c5ebde644ca8f479b855e830b"
+        },
+        {
+          "index": 7,
+          "name": "part-00007-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "c87115247272ebd8954b48e01e929e8b8ae07c27ab524a3a5093d1975ec7d0a6"
+        },
+        {
+          "index": 8,
+          "name": "part-00008-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "efb479bb838c1a767bc7ed3fb6e3949ce24e230dd4fd5c0ea1166ff5d8291e66"
+        },
+        {
+          "index": 9,
+          "name": "part-00009-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "023a30c24a615e3f1eedfdff24c7bb176b9399ef46b5fd42a8b92d3fe1479db9"
+        },
+        {
+          "index": 10,
+          "name": "part-00010-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "4f27a6adbbddd3f82068189699036eca8f8ad80ca7c74735cff45bccf33f2378"
+        },
+        {
+          "index": 11,
+          "name": "part-00011-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "db7d5476c7ef1dfbe1e7edb2ba7e9d20d9d368d5bb9b7e0ebeff17bca85609c8"
+        },
+        {
+          "index": 12,
+          "name": "part-00012-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "571597bc2ff208c4cbf378a90c8bca70ca92cc3f2dca3c1f7c1ca5003cd94e88"
+        },
+        {
+          "index": 13,
+          "name": "part-00013-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "210d65ca0272c6a8cd968c870b4b748c7ae315d2dfd47b3087f2ce76271db093"
+        },
+        {
+          "index": 14,
+          "name": "part-00014-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "428638108fd3cbd1478aa2738dce747385d4eb16c494e2ee178fc44fcfa10963"
+        },
+        {
+          "index": 15,
+          "name": "part-00015-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "99709a7bd7c95a8e4cc7843ec88ef8fc87aaa165d9ec1f230fdcb4998abcfeb5"
+        },
+        {
+          "index": 16,
+          "name": "part-00016-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "7d940f6d85cb6647422b7f2374e6c6eba72b79c0975bfb194d6ab25c53c5c0ba"
+        },
+        {
+          "index": 17,
+          "name": "part-00017-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "34e2817789dd7f74e9c2575d88e0f97401cd9395c246602512888c293a0b615a"
+        },
+        {
+          "index": 18,
+          "name": "part-00018-of-00020.bin",
+          "size_bytes": 83886080,
+          "sha256": "180cdfd77b8e972f3e42ea64d80d32edeea417fc0e19eeaeeb67b8c7e233a60d"
+        },
+        {
+          "index": 19,
+          "name": "part-00019-of-00020.bin",
+          "size_bytes": 29217342,
+          "sha256": "7065363ab303a3223158f8c74115bfe44dbe938f5e7b4ff326291495d867198c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 # Code provenance
 
-Prepared for Neuron Editorial Manager reviewer code access on 2026-08-30 Asia/Tokyo.
+Prepared for Neuron Editorial Manager reviewer code access on 2026-08-30
+Asia/Tokyo.
 
 ## Included code families
 
@@ -18,3 +19,4 @@ Prepared for Neuron Editorial Manager reviewer code access on 2026-08-30 Asia/To
 - Editorial Manager browser/session artifacts.
 - Reviewer recommendation information.
 - Python bytecode caches and macOS metadata files.
+

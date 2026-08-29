@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>制御理論によるGlobal Workspace core同定 - 人工ネットワーク検証</title>
+<style>
+@page { size: A4; margin: 15mm 16mm 16mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: "Noto Sans CJK JP", "Noto Sans JP", sans-serif; color:#151515; font-size:10.5pt; line-height:1.62; margin:0; }
+h1 { font-size:24pt; line-height:1.25; margin:0 0 8mm; letter-spacing:-0.02em; }
+h2 { font-size:16pt; margin:8mm 0 3mm; border-bottom:1px solid #999; padding-bottom:1.5mm; }
+h3 { font-size:12.5pt; margin:5mm 0 2mm; }
+p { margin:2mm 0; }
+.lead { font-size:12pt; line-height:1.7; }
+.callout { border-left:5px solid #333; background:#f2f2f2; padding:4mm 5mm; margin:5mm 0; }
+.key { font-weight:700; }
+.eq { font-family:"DejaVu Sans Mono", monospace; background:#f6f6f6; padding:3mm 4mm; margin:3mm 0; font-size:9.5pt; overflow-wrap:anywhere; }
+figure { margin:5mm 0 4mm; break-inside:avoid; }
+figure img { display:block; max-width:100%; max-height:185mm; margin:0 auto; }
+figcaption { font-size:8.5pt; color:#444; margin-top:1.5mm; text-align:center; }
+table.metrics, table.robust { width:100%; border-collapse:collapse; font-size:8pt; margin:4mm 0; break-inside:avoid; }
+table.metrics th, table.metrics td, table.robust th, table.robust td { border:1px solid #bbb; padding:1.6mm 1.3mm; text-align:right; }
+table.metrics th:first-child, table.metrics td:first-child { text-align:left; }
+table.robust th:first-child, table.robust td:first-child { text-align:center; }
+table.metrics thead th, table.robust thead th { background:#ededed; }
+.small { font-size:8.7pt; color:#444; }
+.pagebreak { break-before:page; }
+.two-col { columns:2; column-gap:8mm; }
+ul { margin:2mm 0 3mm 5mm; padding-left:4mm; }
+li { margin:1mm 0; }
+.footer-note { font-size:8pt; color:#555; margin-top:6mm; }
+</style>
+</head>
+<body>
+<section>
+<h1>制御理論による<br>Global Workspace core同定</h1>
+<p class="lead">人工ネットワークに「真のworkspace」「出力専用」「観測専用」「高次数だが低ランクのhub」を埋め込み、controllabilityとobservabilityから真のcoreを回収できるかを検証した。</p>
+<div class="callout"><span class="key">結論：</span>当初の「残りのネットワークに対するcontrollability × observability」だけでは不十分だった。入力専用ノードと観測専用ノードを寄せ集めたクラスタが、真のworkspaceより高得点になる。しかし、<span class="key">クラスタ内部で、読み込まれた状態が書き出し可能な状態へ変換されること</span>を要求する internal mediation 指標を導入すると、この偽陽性を除去できた。</div>
+<p>seed 0では、64ノードから選べる全 <b>635,376</b> 個の4ノード集合を総当たりし、埋め込んだworkspace <b>[48, 49, 50, 51]</b> が第1位となった。近似的なbeam searchを12個の独立なネットワークで繰り返すと、完全回収は <b>11/12</b> 回で、残る1回も4ノード中3ノードを回収した。</p>
+<h2>1. 人工ネットワーク</h2>
+<p>離散時間線形系 <b>x(t+1)=Ax(t)</b> を用いた。ノード数64、specialist moduleは4個（各12ノード）。残り16ノードに次の4種類のクラスタを置いた。</p>
+<ul>
+<li><b>Workspace (48-51)</b>：各moduleへの異質で双方向な接続と、内部再帰結合を持つ。</li>
+<li><b>Actuator-only (52-55)</b>：外向きは強いが、外部状態をほとんど読み込まない。</li>
+<li><b>Observer-only (56-59)</b>：外部状態を強く読み込むが、外部へほとんど作用しない。</li>
+<li><b>Degree hub (60-63)</b>：接続数は最大だが、4ノードがほぼ同じ入出力パターンを持つため実効的に低ランク。</li>
+</ul>
+<figure><img src="results/fig1_adjacency_matrix.png"><figcaption>図1　結合行列 |A|。48-51が真のworkspace、52-55がactuator、56-59がobserver、60-63が高次数hub。</figcaption></figure>
+</section>
+
+<section class="pagebreak">
+<h2>2. 最初の定義と、その失敗</h2>
+<p>候補クラスタをS、残りをRとする。当初案では、Sを入力点としてRを制御するGramianと、Sを観測点としてRを復元するGramianを作り、その積からjoint access spectrumを得る。</p>
+<div class="eq">Wc(R|S) = P_R [ Σ A^τ B_S B_Sᵀ (Aᵀ)^τ ] P_Rᵀ<br>
+Wo(R|S) = P_R [ Σ (Aᵀ)^τ C_Sᵀ C_S A^τ ] P_Rᵀ<br>
+σᵢ(S) = sqrt( eigenvalueᵢ( Wc(R|S) Wo(R|S) ) )</div>
+<p>これは「S全体としてRを読み書きできるか」を測る。しかし、S内のあるノードが読むだけ、別のノードが書くだけでも高得点になりうる。実際、actuator 2個とobserver 2個からなる <b>Split I/O decoy</b> は、真のworkspaceより高いexternal scoreを得た。</p>
+<figure><img src="results/fig2_external_vs_mediation.png"><figcaption>図2　青が当初のexternal access、橙が修正版internal mediation。Split I/O decoyはexternal accessでは最大になる。</figcaption></figure>
+<table class="dataframe metrics">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Edges</th>
+      <th>Write</th>
+      <th>Read</th>
+      <th>External</th>
+      <th>Mediation</th>
+      <th>Eff. rank</th>
+      <th>WMS</th>
+      <th>Lesion drop</th>
+    </tr>
+    <tr>
+      <th>Cluster</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Workspace</th>
+      <td>281</td>
+      <td>24.100</td>
+      <td>10.313</td>
+      <td>3.074</td>
+      <td>3.616</td>
+      <td>3.839</td>
+      <td>3.389</td>
+      <td>0.558</td>
+    </tr>
+    <tr>
+      <th>Actuator-only</th>
+      <td>166</td>
+      <td>38.708</td>
+      <td>0.015</td>
+      <td>0.237</td>
+      <td>0.131</td>
+      <td>3.399</td>
+      <td>0.095</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <th>Observer-only</th>
+      <td>178</td>
+      <td>0.012</td>
+      <td>47.482</td>
+      <td>0.207</td>
+      <td>0.108</td>
+      <td>3.477</td>
+      <td>0.088</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <th>Degree hub</th>
+      <td>394</td>
+      <td>11.628</td>
+      <td>17.910</td>
+      <td>0.358</td>
+      <td>2.881</td>
+      <td>1.002</td>
+      <td>0.694</td>
+      <td>0.857</td>
+    </tr>
+    <tr>
+      <th>Split I/O decoy</th>
+      <td>184</td>
+      <td>21.230</td>
+      <td>12.598</td>
+      <td>4.107</td>
+      <td>0.401</td>
+      <td>2.961</td>
+      <td>0.288</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <th>Random peripheral</th>
+      <td>111</td>
+      <td>2.945</td>
+      <td>6.733</td>
+      <td>0.837</td>
+      <td>0.670</td>
+      <td>3.731</td>
+      <td>0.620</td>
+      <td>0.229</td>
+    </tr>
+  </tbody>
+</table>
+<p class="small">Write/Readは有限時間Gramianのtrace。Lesion dropは候補を除去した際のmodule間dynamic communicability低下率。高次数hubはedge数394、lesion drop 0.857と最大だが、workspaceではないように設計されている。</p>
+</section>
+
+<section>
+<h2>3. 修正：クラスタ内部の「媒介」を測る</h2>
+<p>Sが単なるsensorとactuatorの集合ではなく、外部から読み込んだ状態を内部で保持・変換し、再び外部へ書き出すsubsystemであることを要求する。分割したダイナミクスは次の通り。</p>
+<div class="eq">x_S(t+1) = A_SS x_S(t) + A_SR x_R(t)<br>
+y_R(t) = A_RS x_S(t)</div>
+<p>ここでRからSへの結合A_SRを入力行列、SからRへの結合A_RSを出力行列として、<b>S内部の有限時間Gramian</b>を計算する。</p>
+<div class="eq">Ŵc(S) = Σ A_SS^τ A_SR A_SRᵀ (A_SSᵀ)^τ<br>
+Ŵo(S) = Σ (A_SSᵀ)^τ A_RSᵀ A_RS A_SS^τ<br>
+ηᵢ(S) = sqrt( eigenvalueᵢ( Ŵc(S) Ŵo(S) ) )</div>
+<p>ηᵢは、Rから駆動され、かつRへ作用できる<b>同一の内部モード</b>の強さを表す。さらに、ηのeffective rankと、異なるspecialist moduleに対する入出力の広がりGを組み合わせた。</p>
+<div class="eq">D_eff = exp( -Σ pᵢ log pᵢ ),   pᵢ = ηᵢ / Σηⱼ<br>
+WMS(S) = (Σηᵢ) × (D_eff / |S|) × G_IO</div>
+<p>WMSは <b>Workspace Mediation Score</b> の略称で、この検証用に導入した操作的指標である。</p>
+<figure><img src="results/fig3_mediation_spectra.png"><figcaption>図3　真のworkspaceは4本の強い媒介モードを持つ。高次数hubは第1モードだけが強く、残りはほぼゼロで、冗長な1次元hubである。</figcaption></figure>
+</section>
+
+<section>
+<h2>4. 回収結果</h2>
+<h3>全探索</h3>
+<p>seed 0について、4ノード集合を全探索した。真のworkspaceのWMSは <b>3.389</b>、これを上回る集合は0個で、順位は<b>1位</b>だった。第2位は [48, 49, 50, 63]、WMS=3.239で、真のworkspaceの3ノードを含む。</p>
+<figure><img src="results/fig4_null_distribution.png"><figcaption>図4　2,000個のランダム4ノード集合との比較。workspaceは全サンプルを上回った。</figcaption></figure>
+<h3>独立なネットワークでの探索</h3>
+<p>乱数seedを変えた12ネットワークで幅50のbeam searchを行った。完全回収は<b>11/12</b>。失敗したseed 6でも、選ばれた集合は [48,49,51,63] で、真のworkspaceの4個中3個を含み、真の集合はbeam内5位だった。</p>
+<h3>背景結合を強くした頑健性試験</h3>
+<table class="robust"><thead><tr><th>Background</th><th>300 random setsすべてに勝つ</th><th>埋込decoy群の中で1位</th><th>平均percentile</th></tr></thead><tbody><tr><td>0.75</td><td>100.0%</td><td>100.0%</td><td>100.000</td></tr><tr><td>1.00</td><td>100.0%</td><td>100.0%</td><td>100.000</td></tr><tr><td>1.50</td><td>100.0%</td><td>100.0%</td><td>100.000</td></tr><tr><td>2.00</td><td>95.0%</td><td>100.0%</td><td>99.983</td></tr></tbody></table>
+<p class="small">各background強度につき20ネットワーク。random-setの結果は全組合せ探索ではなく、各ネットワーク300集合のサンプルに対する結果。</p>
+<figure><img src="results/fig6_robustness.png"><figcaption>図5　背景ダイナミクスを2倍まで強くしても、埋込motifの中では全試行でworkspaceが1位だった。</figcaption></figure>
+</section>
+
+<section>
+<h2>5. 指標は何を「workspace」と呼んでいるのか</h2>
+<p>Split I/O decoy内部に、observerからactuatorへ情報を渡す結合を人工的に追加した。結合を強めるにつれてWMSは単調に上昇し、結合強度1.1付近で元のworkspaceを上回った。</p>
+<figure><img src="results/fig5_internal_coupling_sweep.png"><figcaption>図6　内部routingを追加すると、もともとの偽クラスタが本物のread-to-write mediatorへ変化し、WMSもそれを追跡する。</figcaption></figure>
+<div class="callout"><span class="key">したがって、修正版が探しているものは単なる双方向接続ではない。</span><br>
+外部から複数種類の状態を読み込み、クラスタ内部の複数の独立モードに載せ、それらを外部の複数moduleへ因果的に書き戻せる、小さなdynamical mediatorである。</div>
+<h2>6. 現段階での評価</h2>
+<h3>うまくいった点</h3>
+<ul>
+<li>actuator-only、observer-only、split I/O、degree hubを区別できた。</li>
+<li>degreeやlesion impactだけでは拾えない「高次元性」を明示的に評価できた。</li>
+<li>全探索により、少なくとも設計した線形系ではground truthを回収できることを確認した。</li>
+<li>内部routingを連続的に操作した試験で、指標の意味が予測通り変化した。</li>
+</ul>
+<h3>重要な限界</h3>
+<ul>
+<li><b>人工的ground truth</b>であり、脳のGlobal Workspaceを同定したわけではない。</li>
+<li>線形・時不変・完全観測のAを仮定した。実データではAの推定誤差、hidden state、非線形性、状態依存性が支配的になりうる。</li>
+<li>全探索ではクラスタサイズk=4を既知とした。kが未知なら、WMSはノード追加で増えうるため、<b>サイズ罰則</b>またはregularization pathが必要。</li>
+<li>module globalityにはspecialist moduleの分割を事前に与えた。未知の場合はcommunity detectionとの同時推定が必要。</li>
+<li>WMSの積形式は唯一の選択ではない。Pareto評価、null-model z score、minimax型評価との比較が必要。</li>
+</ul>
+<div class="eq">未知サイズの場合の候補： max_S [ log WMS(S) - λ |S| ]<br>
+または、サイズ別null分布とmarginal gainの変化点からminimal coreを選ぶ。</div>
+</section>
+
+<section>
+<h2>7. 次に行うべき検証</h2>
+<ol>
+<li><b>推定誤差試験：</b>Aにノイズを加える、短い時系列からVAR/state-space modelでAを推定する、hidden nodesを導入する。</li>
+<li><b>非線形・状態依存化：</b>局所線形化、empirical controllability/observability Gramian、Koopman/DMD、switching LDSで覚醒・麻酔・課題状態を比較する。</li>
+<li><b>競合指標：</b>degree、participation coefficient、rich-club、communicability、minimum control energy、transfer entropyとの比較。</li>
+<li><b>因果検証：</b>候補coreの刺激が多moduleへ広がるか、候補coreの記録から多module状態を復元できるか、そしてcore内のread-to-write pathwayを遮断すると両者の結合が失われるかを試す。</li>
+<li><b>脳データ：</b>まず多領域spiking/ECoGなど時間分解能の高い公開データで、状態別のeffective A(t)を推定する。</li>
+</ol>
+<div class="callout"><span class="key">今回の最も大きな収穫：</span>Global Workspaceを制御理論で定義するなら、「外部を読める」と「外部へ書ける」の併記だけでは足りない。<b>readとwriteが同じ内部ダイナミクスを介して接続されていること</b>が、workspace性の中心的条件になる。</div>
+<p class="footer-note">再現用コード、CSV、図、exact-search結果は同梱の workspace_core_experiment.py および results/ に保存。</p>
+</section>
+</body></html>
