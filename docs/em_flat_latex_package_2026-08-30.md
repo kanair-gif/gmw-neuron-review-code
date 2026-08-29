@@ -80,7 +80,7 @@ Build checks from an extracted copy of the current flat zip in `/private/tmp/gmw
 - Supplement build emitted the existing `xr-hyper` package-order warning and completed successfully.
 - Render QA spot checks at 150 dpi: main page 3, main page 6, supplement page 14, and supplement page 23. Figure 1 and Figure 2 rendered normally; Supplementary Figure S13B retained grid lines behind bars.
 - PDF text extraction from the flat-built main and integrated PDFs found `generative AI` before `References`.
-- PDF text extraction from the flat-built main and integrated PDFs found the public GitHub code URL and found no remaining old `No new public code`, `No public repository for initial submission`, or `available from the lead contact upon reasonable request` wording.
+- PDF text extraction from the flat-built main and integrated PDFs found the public GitHub code URL and found no remaining legacy no-public-code or lead-contact-only access wording.
 - Render QA at 180 dpi for current main PDF pages 15--16 confirmed the Resource availability and Key resources table pages render without layout breakage after the public-code URL update.
 
 ## EM Item Guidance
